@@ -1,8 +1,10 @@
 # SupperWrapper
 ###description
-A module aiming circumvent the limitations using PIL and textwrap concerning these two issues   
+PIL + textwrap is great to print a text on an image.   
+But if one wants the max font size to fit a limited printing box, things are getting harder.
+This module allow a modest workaround to fix these two issues :
 - carLim and FontSize optimization when width and height are given   
-- draw.text printing outside the expected box
+- draw.text printing outside the expected box (it happens when font metrics are messed up)
 
 ###use
 To find the best fontSize and carlim
